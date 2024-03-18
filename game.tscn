@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://3egpsdr0f1b7"]
+[gd_scene load_steps=15 format=3 uid="uid://3egpsdr0f1b7"]
 
 [ext_resource type="Material" uid="uid://bpjt5wv3tabwm" path="res://addons/kenney_prototype_tools/materials/dark/material_08.tres" id="1_q4ove"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_3sgvy"]
 [ext_resource type="Environment" uid="uid://dlneuxr8sollc" path="res://env.tres" id="3_gar0w"]
 [ext_resource type="Shader" path="res://shader.gdshader" id="4_3ar2h"]
 [ext_resource type="Material" uid="uid://8ylcw0h1lkhg" path="res://addons/kenney_prototype_tools/materials/orange/material_01.tres" id="5_qsqpa"]
+[ext_resource type="Script" path="res://scripts/shader_toggler.gd" id="5_rrwwp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vthhm"]
 size = Vector3(50, 0.25, 50)
@@ -69,6 +70,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("5_rrwwp")
 
 [node name="cube1" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1, 0.2)
